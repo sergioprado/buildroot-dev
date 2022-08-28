@@ -33,9 +33,10 @@ prepare_single()
 
 prepare()
 {
-	prepare_single qemu_arm_uclibc_ext
-	prepare_single qemu_mips_musl_ext
-	prepare_single qemu_x86_glibc_ext
+	prepare_single qemu_aarch64_virt_glibc
+	prepare_single qemu_arm_vexpress_uclibc
+	prepare_single qemu_mips32r6el_malta_glibc
+	prepare_single qemu_x86_64_musl
 }
 
 main()
